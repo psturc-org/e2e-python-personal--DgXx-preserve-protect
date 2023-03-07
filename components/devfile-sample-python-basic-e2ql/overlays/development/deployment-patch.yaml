@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-e2ql
+  namespace: e2e-demos-mbtw-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images-protected@sha256:45cdde6703e7ed9f2b5ce026b99846100e2da61f3a2eb15b3b6b90be6c6f62d4
+        name: my-python
+        resources: {}
+status: {}
