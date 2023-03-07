@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-e2ql
     spec:
       containers:
-      - image: quay.io/psturc/test-images-protected:-DgXx-devfile-sample-python-basic-e2ql
+      - image: quay.io/psturc/test-images-protected@sha256:45cdde6703e7ed9f2b5ce026b99846100e2da61f3a2eb15b3b6b90be6c6f62d4
         name: my-python
         ports:
         - containerPort: 8081
